@@ -76,7 +76,6 @@
     position: relative;
 }
 
-/* center image box */
 .box {
     height: 350px;
     width: 350px;
@@ -87,7 +86,6 @@
     margin-bottom: 40px;
 }
 
-/* circle */
 .circel {
     position: absolute;
     height: 100%;
@@ -99,7 +97,6 @@
     height: auto;
 }
 
-/* microphone */
 .mic {
     position: absolute;
 }
@@ -109,7 +106,6 @@
     height: auto;
 }
 
-/* title text */
 .title h1 {
     color: #fff;
     font-size: 48px;
@@ -123,7 +119,6 @@
     margin: 0 auto 24px;
 }
 
-/* buttons */
 .secondary-btn {
     background-color: transparent;
     border: 1px solid green;
@@ -144,13 +139,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
+
+
 
 .about-title {
     align-items: center;
     text-align: center;
-    height: 222px;
+    height: 200px;
     width: 1200px;
+}
+.about-title h1{
+    margin-top: -100px;
 }
 
 .about-title p {
@@ -193,6 +194,85 @@
     height: 0;
 
 }
+
+/* feature section */
+
+.features {
+    background-color: #230E3D;
+    color: white;
+
+}
+
+.features h1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 120px;
+}
+
+.card-container {
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 225px);
+    gap: 30px;
+    padding-top: 40px;
+    padding: 40px 200px 200px 200px;
+}
+
+.feature-1 {
+    grid-row: span 2;
+}
+
+.feature-2,
+.feature-3,
+.feature-4 {
+    grid-column: span 2;
+    
+}
+
+.feature-4, .feature-5{
+    height: 250px;
+}
+.card-container div {
+    background-color: #35116546;
+    box-shadow: #1a0b2e1a;
+    border-radius: 40px;
+    padding: 40px;
+   
+    
+
+}
+
+.card-container h3{
+    margin-top: 16px;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0%;
+}
+
+.card-container p{
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    font-weight: 300;
+    color: #ffffff81;
+
+}
+
+.card-container img {
+    height: 50px;
+    width: 50px;
+}
+
+.feature-2 img{
+    height: 70px;
+    width: 50px;
+}
+
+
 
 
 @media (max-width:768px) {
