@@ -39,6 +39,12 @@
     background-color: #1A0B2E;
 }
 
+.menu-toggle{
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
 .nav-logo img {
     padding-left: 10px;
 }
@@ -64,9 +70,10 @@
 }
 
 .nav-container hr {
-    border: 1px solid #1a0b2eee;
+    border: 1px solid #1a0b2ef5;
 
 }
+
 
 
 
@@ -622,28 +629,34 @@
 
 @media screen and (max-width: 576px) {
 
-    .navbar {
-
-        height: 64px;
-    }
-
-    .nav-container {
-        backdrop-filter: none;
-    }
-
-    .navbar,
-    .flex {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.7rem;
+    .flex{
+        display: none;
+        width: 100%;
         position: absolute;
-        height: 100vh;
-        width: 250px;
-        top: 0;
-        right: 0;
-        padding: 5rem 1.5rem;
+        z-index: -1;
+        top: 40px;
+        left: 0;
+    }
+    .nav-links,#subsc{
+        display: none;
+
     }
 
+  
+    .menu-toggle{
+        color: #FFFFFF;
+        display: block !important;
+    }
+    
+    
+
+    .navbar{
+        height: 28px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
     .nav-logo img {
         width: 150px;
     }
@@ -687,14 +700,11 @@
 
     .about {
 
-        height: 800px;
-        width: 100%;
+         height: auto;
+        width: 100%; 
         background-color: #1A0B2E;
         color: #ffffff;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     .about-title p {
@@ -709,10 +719,16 @@
 
     .about-title {
 
-        width: 430px;
+        width: 400px;
         height: 350px;
         align-items: center;
         text-align: center;
+
+    }
+
+    .about hr{
+        width: 390px;
+        margin-top: 50px;
 
     }
 
@@ -721,7 +737,8 @@
 
     .about-card {
         display: grid;
-        height: 250px;
+        height: auto;
+        padding-bottom: 40px;
         grid-template-columns: repeat(2, 1fr);
 
     }
@@ -735,6 +752,7 @@
 
     .card-container {
         display: flex;
+        justify-content: center;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 380px);
@@ -748,6 +766,7 @@
     .feature-5 {
         width: 300px;
         height: auto;
+        margin-left: 30px;
     }
 
     .vedio {
@@ -768,7 +787,7 @@
 
 
     #ep-titel {
-        font-size: 38px;
+        font-size: 36px;
         font-weight: 600;
         padding-top: 35px;
         padding-bottom: 25px;
