@@ -186,6 +186,11 @@
 
 }
 
+.secondary-btn:hover {
+    background-color: #00ff8863;
+    color: #00FF88;
+}
+
 .secondary-btn img {
     padding-top: 2px;
     align-items: center;
@@ -630,8 +635,9 @@
     font-weight: 300;
     color: #ffffff81;
     margin-top: 70px;
-   margin-bottom: -100px;
+    margin-bottom: -100px;
 }
+
 /* responsive design for mobile device */
 
 
@@ -684,6 +690,14 @@
     }
 
     /* hero */
+
+    .btn {
+        padding: 14px 10px;
+    }
+
+    .secondary-btn {
+        padding: 14px 16px;
+    }
 
     .hero-container {
         height: 600px;
@@ -775,7 +789,7 @@
     .feature-3,
     .feature-4,
     .feature-5 {
-        width: 300px;
+        width: 270px;
         height: auto;
         margin-left: 30px;
     }
@@ -806,18 +820,18 @@
 
     .ep-vedio {
         height: 180px;
-        width: 370px;
+        width: 350px;
 
     }
 
     .ep-title {
         height: 220px;
-        width: 370px;
+        width: 350px;
         padding: 10px;
     }
 
-    .ep-title h4{
-       margin-top: 50px;
+    .ep-title h4 {
+        margin-top: 50px;
     }
 
     .ep-title h1 {
@@ -836,7 +850,7 @@
     .host-content {
         display: flex;
         flex-direction: column;
-        width: 300px;
+        width: 280px;
         height: 500px;
     }
 
@@ -858,18 +872,18 @@
     /* footer */
 
     .footer {
-       height: auto !important;
-    min-height: 300px;
-    width: 100%;
-    background-image: url(../image/footer-bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-  
+        height: auto !important;
+        min-height: 300px;
+        width: 100%;
+        background-image: url(../image/footer-bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+
     }
 
-    .footer-content{
+    .footer-content {
         margin-top: -120px;
     }
 
@@ -917,8 +931,8 @@
     }
 
     .footer-content p {
-         margin-top: 90px;
-   margin-bottom: -130px;
+        margin-top: 90px;
+        margin-bottom: -130px;
     }
 
 
