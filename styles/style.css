@@ -39,7 +39,7 @@
     background-color: #1A0B2E;
 }
 
-.menu-toggle{
+.menu-toggle {
     display: none;
     cursor: pointer;
     font-size: 24px;
@@ -436,9 +436,13 @@
     font-weight: 400;
     color: #00FF88;
     padding-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    padding-bottom: 0%;
 }
 
-.ep-vedio{
+.ep-vedio {
     height: 200px;
     width: 340px;
     position: relative;
@@ -562,13 +566,17 @@
 
 
 .footer {
-    display: flex;
-    height: 412px;
+    height: auto !important;
+    min-height: 450px;
     width: 100%;
     background-image: url(../image/footer-bg.png);
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer h1 {
@@ -583,6 +591,7 @@
     justify-content: center;
     text-align: center;
     margin: 0 auto;
+    height: 300px;
 }
 
 .footer-content ul a {
@@ -621,15 +630,15 @@
     font-size: 16px;
     font-weight: 300;
     color: #ffffff81;
-    margin-top: 30px;
+    margin-top: 70px;
+   margin-bottom: -100px;
 }
-
 /* responsive design for mobile device */
 
 
 @media screen and (max-width: 576px) {
 
-    .flex{
+    .flex {
         display: none;
         width: 100%;
         position: absolute;
@@ -637,26 +646,29 @@
         top: 40px;
         left: 0;
     }
-    .nav-links,#subsc{
+
+    .nav-links,
+    #subsc {
         display: none;
 
     }
 
-  
-    .menu-toggle{
+
+    .menu-toggle {
         color: #FFFFFF;
         display: block !important;
     }
-    
-    
 
-    .navbar{
+
+
+    .navbar {
         height: 28px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 20px;
     }
+
     .nav-logo img {
         width: 150px;
     }
@@ -692,16 +704,16 @@
     }
 
     .title p {
-    max-width: 385px;
-    margin: 0 auto 24px;
-}
+        max-width: 385px;
+        margin: 0 auto 24px;
+    }
 
     /* about */
 
     .about {
 
-         height: auto;
-        width: 100%; 
+        height: auto;
+        width: 100%;
         background-color: #1A0B2E;
         color: #ffffff;
         display: flex;
@@ -726,7 +738,7 @@
 
     }
 
-    .about hr{
+    .about hr {
         width: 390px;
         margin-top: 50px;
 
@@ -805,6 +817,10 @@
         padding: 10px;
     }
 
+    .ep-title h4{
+       margin-top: 50px;
+    }
+
     .ep-title h1 {
         font-size: 18px;
         font-weight: 600;
@@ -843,11 +859,17 @@
     /* footer */
 
     .footer {
-        display: flex;
-        height: 300px;
-        background-image: url(../image/footer-bg.png);
-        background-repeat: none;
-        background-size: cover;
+       height: auto !important;
+    min-height: 450px;
+    width: 100%;
+    background-image: url(../image/footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     }
 
 
@@ -855,28 +877,50 @@
         font-size: 32px;
     }
 
+    .footer-content #footer-logo {
+        width: 200px;
+        height: 34px;
+        margin-top: 30px;
+        padding-bottom: -20px;
+
+    }
+
+    .f-logo {
+        margin-bottom: -30px;
+    }
+
     .footer-content ul {
-       
+
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 5px;
-        grid-template-rows: repeat(2 ,25px);
-  
+        grid-template-rows: repeat(2, 25px);
+
+
+    }
+
+    .footer-content li {
+        margin-top: 45px;
+        height: 20px;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 20px;
+        padding: 10px;
 
     }
 
     .footer-content ul img {
-        height: 16px;
-        width: 16px;
+        height: 20px;
+        width: 20px;
 
     }
-    .footer-content li{
-        gap: 5px;
+
+    .footer-content p {
+        margin-top: 70px;
+   margin-bottom: -100px;
     }
 
-    .footer-content ul a{
-        gap: 0;
-    }
+
 
 
 
