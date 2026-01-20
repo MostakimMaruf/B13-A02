@@ -567,7 +567,6 @@
 
 .footer {
     height: auto !important;
-    min-height: 450px;
     width: 100%;
     background-image: url(../image/footer-bg.png);
     background-position: center;
@@ -860,16 +859,18 @@
 
     .footer {
        height: auto !important;
-    min-height: 450px;
+    min-height: 300px;
     width: 100%;
     background-image: url(../image/footer-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  
+    }
+
+    .footer-content{
+        margin-top: -120px;
     }
 
 
@@ -878,8 +879,8 @@
     }
 
     .footer-content #footer-logo {
-        width: 200px;
-        height: 34px;
+        width: 150px;
+        height: 25px;
         margin-top: 30px;
         padding-bottom: -20px;
 
@@ -916,8 +917,8 @@
     }
 
     .footer-content p {
-        margin-top: 70px;
-   margin-bottom: -100px;
+         margin-top: 90px;
+   margin-bottom: -130px;
     }
 
 
