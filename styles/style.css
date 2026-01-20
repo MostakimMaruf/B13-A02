@@ -752,7 +752,7 @@
     }
 
     .about hr {
-        width: 390px;
+        width: 380px;
         margin-top: 50px;
 
     }
@@ -862,7 +862,6 @@
     }
 
     .host-img {
-        margin-top: -60px;
         margin-bottom: 35px;
         height: 150px;
         width: 150px;
@@ -925,8 +924,8 @@
     }
 
     .footer-content ul img {
-        height: 20px;
-        width: 20px;
+        height: 18px;
+        width: 18px;
 
     }
 
