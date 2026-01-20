@@ -806,13 +806,13 @@
 
     .ep-vedio {
         height: 180px;
-        width: 400px;
+        width: 370px;
 
     }
 
     .ep-title {
         height: 220px;
-        width: 400px;
+        width: 370px;
         padding: 10px;
     }
 
@@ -836,7 +836,7 @@
     .host-content {
         display: flex;
         flex-direction: column;
-        width: 320px;
+        width: 300px;
         height: 500px;
     }
 
